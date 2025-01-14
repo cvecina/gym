@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   ssr: false,
   router: {
     options: {
-      hashMode: true
+      hashMode: false
     }
   },
   imports: {
@@ -28,10 +28,10 @@ export default defineNuxtConfig({
       enabled: true
     }
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', // 'primevue'
-    '@nuxtjs/color-mode', '@pinia/nuxt', 
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n',
+    '@nuxtjs/color-mode', '@pinia/nuxt',
     //'@nuxt/image',
-     '@vueuse/nuxt'
+    '@vueuse/nuxt'
   ],
 
   i18n: {
@@ -39,11 +39,10 @@ export default defineNuxtConfig({
   },
 
   css: [
-    // "primevue/resources/themes/lara-light-blue/theme.css",
     "@/assets/css/main.css"
   ],
   build: {
-    transpile: ["primevue", "nhost", '@fawmi/vue-google-maps']
+    transpile: []
   },
   colorMode: {
     preference: 'light', // default theme
