@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* {
+    @apply nombre de las clases de tailwind para aplicar en el código
+} */
